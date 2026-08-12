@@ -50,11 +50,11 @@ export default function WatchlistPage() {
     };
 
     const handleDelete = async (id) => {
+        setItems((prev) => prev.filter((item) => item.id !== id));  // 먼저 UI 반영
         try {
             await deleteWatchlist(id);
-            setItems((prev) => prev.filter((item) => item.id !== id));
-        } catch (err) {
-            setError('삭제에 실패했습니다.');
+        } catch {
+            fetchWatchlist();  // 실패 시 롤백
         }
     };
 
