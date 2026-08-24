@@ -3,6 +3,7 @@ import LoginPage from './pages/LoginPage';
 import WatchlistPage from './pages/WatchlistPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import RegisterPage from "./pages/RegisterPage.jsx";
+import NewsPage from './pages/NewsPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 
           <Route element={<ProtectedRoute />}>
             <Route path="/" element={<WatchlistPage />} />
+            <Route path="/news" element={<NewsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
