@@ -135,3 +135,76 @@
     border-color: #e74c3c;
     background: rgba(231, 76, 60, 0.08);
 }
+.watchlist-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.price-current {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f2f3f5;
+}
+
+.price-change {
+    font-size: 12px;
+    color: #8a92a6;
+}
+
+.watchlist-price.up .price-current,
+.watchlist-price.up .price-change {
+    color: #2ecc71;
+}
+
+.watchlist-price.down .price-current,
+.watchlist-price.down .price-change {
+    color: #e74c3c;
+}
+
+.price-loading {
+    font-size: 12px;
+    color: #8a92a6;
+}
+
+.target-display {
+    cursor: pointer;
+    border-bottom: 1px dashed transparent;
+}
+
+.target-display:hover {
+    border-bottom-color: #8a92a6;
+}
+
+.target-edit-input {
+    width: 80px;
+    padding: 4px 6px;
+    background: #12151a;
+    border: 1px solid #e8b44d;
+    border-radius: 3px;
+    color: #f2f3f5;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+}
+
+.watchlist-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #8a92a6;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 14px;
+    border: 1px solid #2a2f3a;
+    border-radius: 3px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-link:hover {
+    color: #e8b44d;
+    border-color: #e8b44d;
+}
