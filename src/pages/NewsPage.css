@@ -113,3 +113,42 @@
     color: #e8b44d;
     border-color: #e8b44d;
 }
+
+.trending-section {
+    margin-bottom: 28px;
+}
+
+.trending-title {
+    font-size: 15px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 12px;
+}
+
+.trending-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trending-item {
+    display: flex;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #1b1f27;
+    border: 1px solid #2a2f3a;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.trending-name {
+    color: #e8b44d;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.trending-reason {
+    color: #8a92a6;
+}
