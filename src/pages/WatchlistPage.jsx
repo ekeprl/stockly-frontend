@@ -119,6 +119,7 @@ export default function WatchlistPage() {
             <header className="watchlist-header">
                 <h1>Stockly</h1>
                 <nav>
+                    <Link to="/chart" className="nav-link">그래프</Link>
                     <Link to="/news" className="nav-link">뉴스</Link>
                     <button className="logout-btn" onClick={logout}>로그아웃</button>
                 </nav>
